@@ -1,0 +1,29 @@
+.add-new-job-button {
+  background: $color;
+  padding: 15px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 150px;
+  align-self: center;
+  color: $Color4;
+  box-shadow: 2px 3px 5px 2px $Color5;
+}
+@media (max-width: 991.98px) {
+  .add-new-job-button {
+    width: 130px;
+  }
+}
+@media (max-width: 767.98px) {
+  .add-new-job-button {
+    width: 110px;
+    font-size: 13px;
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 400px) {
+  .add-new-job-button {
+    width: 78px;
+    font-size: 10px;
+    padding: 5px 3px;
+  }
+}

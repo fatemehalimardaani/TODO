@@ -1,0 +1,23 @@
+.header {
+  .title {
+    margin: 0;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    color: $Color1;
+    font-size: 21px;
+    border-bottom: 1px solid $Color8;
+  }
+}
+@media (max-width: 767.98px) {
+  .header .title {
+    padding: 13px 0px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 400px) {
+  .header .title {
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+}

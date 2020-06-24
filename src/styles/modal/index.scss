@@ -1,0 +1,76 @@
+.modal-box {
+  position: fixed;
+  background: $Color9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: auto;
+  left: 0;
+  .modal-content {
+    width: 50%;
+    background: $color;
+    left: 25%;
+    position: absolute;
+    text-align: 25px;
+    top: 25%;
+    border-radius: 5px;
+    padding: 15px;
+    .modal-header {
+      border-bottom: 1px solid $Color8;
+      padding: 10px;
+      padding-top: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .modal-close {
+        color: $Color4;
+        cursor: pointer;
+      }
+    }
+    .modal-body {
+      padding: 20px;
+      .modal-title {
+        color: $Color2;
+        font-size: 15px;
+        margin-top: 0;
+      }
+      .modal-field {
+        border-radius: 3px;
+        width: 50%;
+        height: 30px;
+        border: 1px solid $Color8;
+        padding: 0px 5px;
+        color: $Color2;
+      }
+      .modal-button {
+        display: block;
+        margin-top: 15px;
+        border-radius: 3px;
+        padding: 5px 15px;
+        border: 1px solid $Color8;
+        background: $Color4;
+        color: $color;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .modal-box .modal-content .modal-body .modal-field {
+    width: 90%;
+  }
+}
+@media (max-width: 767.98px) {
+  .modal-box .modal-content {
+    width: 80%;
+    left: 8%;
+  }
+}
+@media (max-width: 400px) {
+  .modal-box .modal-content {
+    left: 6%;
+  }
+  .modal-box .modal-content .modal-body .modal-field {
+    width: 95%;
+  }
+}

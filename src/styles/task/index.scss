@@ -1,0 +1,80 @@
+.main-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 80%;
+  margin: auto;
+  .job-list {
+    width: 30%;
+    background: $Color6;
+    border-radius: 3px 0px 0px 3px;
+    .job-list-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+    }
+  }
+  .job-content {
+    width: 70%;
+    position: relative;
+    background: $color;
+    border-radius: 0px 3px 3px 0px;
+    .job-tap {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .content {
+    height: 650px;
+    padding: 20px;
+    text-align: center;
+    .icon {
+      position: absolute;
+      right: 5%;
+      color: $Color1;
+      top: 10px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .main-box {
+    width: 90%;
+  }
+}
+@media (max-width: 767.98px) {
+  .main-box {
+    width: 95%;
+  }
+  .main-box .content {
+    padding: 10px 7px;
+  }
+  .main-box .job-list {
+    width: 35%;
+  }
+  .main-box .job-content {
+    width: 65%;
+  }
+  .main-box .content .icon {
+    top: 7px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .main-box .job-list {
+    width: 40%;
+  }
+  .main-box .job-content {
+    width: 60%;
+  }
+  .main-box .content .icon {
+    top: 6px;
+    font-size: 10px;
+  }
+}
+@import "./addNewTask.scss";
+@import "./addNewJob.scss";
+@import "./job.scss";
+@import "./task.scss";

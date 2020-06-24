@@ -1,0 +1,17 @@
+$color: #fff;
+$Color1: #34b099;
+$Color2: #167765;
+$Color3: #99bdb6;
+$Color4: #34b099;
+$Color5: #b5d2cd;
+$Color6: #f0e9e9;
+$Color7: #f9f7f7;
+$Color8: #dfdcdc;
+$Color9: #40403787;
+
+@import 'fontStyle.scss';
+@import 'body.scss';
+@import 'App.scss';
+@import './task';
+@import './header';
+@import './modal';
